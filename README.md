@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# React Task Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# task-print-manzil-react-dev-client-apps
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project involves implementing two features:
 
-## Expanding the ESLint configuration
+1. A **searchable and paginated table** using data fetched from a provided API.
+2. A **T-shirt customization tool** to upload, resize, and position logos on a predefined T-shirt image.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Custom Table**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   - Fetch and display paginated data from the API.
+   - Add a search bar to filter results.
+   - No external table libraries are allowed.
+
+2. **T-Shirt Customization Tool**
+   - Display a predefined T-shirt image.
+   - Enable users to upload, resize (maintaining aspect ratio), drag, and position logos.
+   - Generate a combined image of the T-shirt with the logo.
+
+---
+
+## Installation
+
+1. **Install Node.js**
+
+   - Download and install from [Node.js Official Website](https://nodejs.org).
+
+2. **Create a React Project**
+   ```bash
+   npx create-react-app react-task-project
+   cd react-task-project
+   ```
